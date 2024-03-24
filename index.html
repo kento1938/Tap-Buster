@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="startScene">
+        <h1>Tap & Buster</h1>
+        <div id="playerStats">
+            <h2>Status</h2>                        
+            <!-- 画像 -->
+            <img src="img\player.png" alt="Description of the image">
+            <p>Max HP: <span id="playerMaxHP">100</span> <button id="increaseHP">Increase HP (Cost: 100 coins)</button></p>
+            <p>Attack: <span id="playerAttack">10</span> <button id="increaseAttack">Increase Attack (Cost: 100 coins)</button></p>
+            <p>Defense: <span id="playerDefense">5</span> <button id="increaseDefense">Increase Defense (Cost: 100 coins)</button></p>
+            <p>Coins: <span id="playerCoins">0</span></p>
+        </div>
+        
+        <button id="startButton">Start</button>
+        <button id="resetButton">Reset Data</button>
+    </div>
+  <div class="container" id="battleScene" style="display: none;">
+    <h1>BATTLE</h1>
+    <div id="playerStatsBattle">
+      
+      <!-- 画像 -->
+      <img src="img\player.png" alt="Description of the image">
+      <p>HP: <span id="playerHP"></span></p>
+    </div>
+    <div id="enemyStats">
+      
+      <!-- 画像 -->
+      <img src="img\Enemy.png" alt="Description of the image">
+      <p style="display: none;">Max HP: <span id="enemyMaxHP"></span></p>
+      <p>HP: <span id="enemyHP"></span></p>
+      <p>Attack: <span id="enemyAttack"></span></p>
+      <p>Level: <span id="enemyLevel"></span></p>
+    </div>
+    <p id="countdown">Countdown: <span id="countdownValue"></span></p>
+    <button id="attackButton">Attack</button>
+    <button id="backButton">Back</button>
+  </div>
+
+  <!-- 音楽を再生するための<audi>要素 -->
+  <audio id="backgroundMusic" autoplay loop>
+    <source src="Audio/background_music.mp3" type="audio/mpeg">
+    
+    Your browser does not support the audio element.
+  </audio>
+  <audio id="buttonSound">
+    <source src="Audio/mini_bomb1.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <audio id="EnemySound">
+    <source src="Audio/Enemy.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2c3e50;
+    color: #000000;
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #ffa500;
+}
+
+/* Button styles */
+/* Button hover animation */
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #3498db;
+    color: #f7f7f7;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    transition: transform 0.3s, box-shadow 0.3s; /* アニメーションを追加 */
+    display: inline-block; /* インラインブロック要素に変更 */
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: scale(1.1); /* ホバー時に少し拡大する */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* 影を追加 */
+}
+
+/* Player and Enemy Stats styles */
+#playerStats, #enemyStats {
+    margin-bottom: 20px;
+    color: #ffa500;
+}
+
+#playerStats h2, #enemyStats h2 {
+    margin-bottom: 10px;
+    color: #ffa500;
+}
+
+#playerStats p, #enemyStats p {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+#playerStats button, #enemyStats button {
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+#playerStats button:hover, #enemyStats button:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+    }
+}
+/* Current HP and Countdown styles */
+#playerHP, #enemyHP, #countdownValue {
+    font-weight: bold;
+    color: #ff5733; /* オレンジ色 */
+}
+
+#countdownValue {
+    font-size: 24px; /* カウントダウンの数字のサイズを大きくする */
+}
+/* 画像のスタイル */
+img {
+    display: block; /* インライン要素からブロック要素に変更 */
+    margin: 20px auto; /* 中央揃え */
+    max-width: 66.67%; /* コンテナの2/3に設定 */
+}
