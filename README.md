@@ -24,28 +24,13 @@
 - Players can enjoy the game by interacting with the user interface provided in `index.html`, with styles defined in `styles.css`.
 - To run the game, open the `index.html` file in a web browser, ensuring that all dependencies (HTML, CSS, JavaScript files, and audio files) are accessible.
 
-### Further Development
-- Enhance user interface with animations, visual effects, and responsive design improvements.
-- Implement additional game features such as multiple enemy types, special attacks, and leveling systems.
-- Optimize performance and refine gameplay mechanics based on player feedback and testing.
 
 ### Dependencies (Continued)
 - Background Music: `background_music.mp3`
 - Button Sound Effect: `mini_bomb1.mp3`
 - Enemy Sound Effect: `Enemy.mp3`
 
-### Credits
-- **Background Music**: Attribution to [Artist Name], [Source Link]
-- **Button Sound Effect**: Attribution to [Artist Name], [Source Link]
-- **Enemy Sound Effect**: Attribution to [Artist Name], [Source Link]
-
 ### License
-- This project is licensed under the [License Name] License - see the [LICENSE](LICENSE) file for details.
+All images used in this project are created by SeaART.AI
+For more information about SEAART and their work, please visit [SeaART.AIwebsite](https://www.seaart.ai/).
 
-### Contributors
-- [Your Name] - Initial Development - [GitHub Profile](https://github.com/your-profile)
-- [Contributor Name] - Additional Features - [GitHub Profile](https://github.com/contributor-profile)
-
-### Acknowledgments
-- Special thanks to [Name] for their valuable insights and feedback during development.
-- Inspired by [Game Title], [Source Link], for providing inspiration and ideas for gameplay mechanics and design.
